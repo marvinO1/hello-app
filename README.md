@@ -35,7 +35,7 @@ http://localhost:8080/hello/properties
   Show properties of jvm
   
 http://localhost:8080/hello/wd
-  Show some simple information about the durrent working directory
+  Show some simple information about the current working directory
     
 http://localhost:8080/hello/fast  
   Returns within a couple of milliseconds  
