@@ -118,7 +118,7 @@ public class HelloController {
 
     private static String dir(String dirName) {
         StringBuilder sb = new StringBuilder();
-        sb.append("file count in ").append(dirName).append("=");
+        sb.append("file count in directory '").append(dirName).append("'").append("=");
         try {
             sb.append(Files.list(Paths.get(dirName)).count());
         } catch (IOException e) {
