@@ -118,11 +118,11 @@ public class HelloController {
 
     private static String dir(String dirName) {
         StringBuilder sb = new StringBuilder();
-        sb.append("file count in directory '").append(dirName).append("'").append("=");
+        sb.append("file count in directory '").append(dirName).append("'").append(" is ");
         try {
             sb.append(Files.list(Paths.get(dirName)).count());
         } catch (IOException e) {
-            sb.append("failed to access directory, reason=").append(e);
+            sb.append("failed to access directory, reason was ").append(e);
         }
         return sb.toString();
     }
