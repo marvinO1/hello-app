@@ -11,6 +11,8 @@ java -jar hello-app-0.1.0.jar --management.endpoints.web.exposure.include=*
 # Docker 
 ```
 docker image build -f Dockerfile -t marvino1/hello-app .
+docker login ...
+docker 
 docker container run -d --name spring-8080 -p 8080:8080 marvino1/hello-app
 docker container run -d --name spring-8081 -p 8081:8080 marvino1/hello-app
 ```

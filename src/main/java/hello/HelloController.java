@@ -56,10 +56,10 @@ public class HelloController {
         String workingDirectory = System.getProperty("user.dir");
 
         StringBuilder sb = new StringBuilder();
-        sb.append("working directory=").append(workingDirectory)
-          .append(";\n")
+        sb.append("working directorym is '").append(workingDirectory).append("'")
+          .append(";")
           .append(dir(workingDirectory))
-          .append(";\n")
+          .append(";")
           .append(dir("data"));
 
         return sb.toString();
