@@ -12,7 +12,7 @@ java -jar hello-app-0.1.0.jar --management.endpoints.web.exposure.include=*
 ```
 docker image build -f Dockerfile -t marvino1/hello-app .
 docker login ...
-docker 
+docker push marvino1/hello-app:latest
 docker container run -d --name spring-8080 -p 8080:8080 marvino1/hello-app
 docker container run -d --name spring-8081 -p 8081:8080 marvino1/hello-app
 ```
@@ -31,7 +31,10 @@ http://localhost:8080/actuator/prometheus
 # Business endpoints :-)
 ```
 http://localhost:8080/hello
-  Show simple statistics
+  Show hello message
+  
+http://localhost:8080/stats
+  Show simple statistics about called endpoints and exceptions
   
 http://localhost:8080/hello/properties
   Show properties of jvm

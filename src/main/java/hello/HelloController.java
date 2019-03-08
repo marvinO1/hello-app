@@ -31,7 +31,16 @@ public class HelloController {
         LocalDateTime.now();
         String msg = LocalDateTime.now()
                 + ", Hello App running on host "
-                + System.getenv("HOSTNAME")
+                + System.getenv("HOSTNAME");
+
+        System.out.println(msg);
+        return msg;
+    }
+
+    @RequestMapping("/stats")
+    public String stats() {
+        LocalDateTime.now();
+        String msg = LocalDateTime.now()
                 + ", fastCounter=" + fastCounter.get()
                 + ", mediumCounter=" + mediumCounter.get()
                 + ", slowCounter=" + slowCounter.get()
