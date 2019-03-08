@@ -30,7 +30,7 @@ public class HelloController {
     public String hello() {
         LocalDateTime.now();
         String msg = LocalDateTime.now()
-                + ", Build in OpenShift, Hello App running on host "
+                + ", Hello App running on host "
                 + System.getenv("HOSTNAME");
 
         System.out.println(msg);
