@@ -30,7 +30,7 @@ public class HelloController {
     public String hello() {
         LocalDateTime.now();
         String msg = LocalDateTime.now()
-                + ", AAAAAAAAAAAAAAA Hello App running on host "
+                + ", Build in OpenShift,  Hello App running on host "
                 + System.getenv("HOSTNAME");
 
         System.out.println(msg);
@@ -64,14 +64,11 @@ public class HelloController {
 
         String workingDirectory = System.getProperty("user.dir");
 
-        StringBuilder sb = new StringBuilder();
-        sb.append("working directorym is '").append(workingDirectory).append("'")
-          .append(";")
-          .append(dir(workingDirectory))
-          .append(";")
-          .append(dir("data"));
-
-        return sb.toString();
+        return "working directorym is '" + workingDirectory + "'" +
+                ";" +
+                dir(workingDirectory) +
+                ";" +
+                dir("data");
     }
 
     @RequestMapping("/hello/fast")
