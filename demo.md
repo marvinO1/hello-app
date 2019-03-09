@@ -43,7 +43,9 @@ Client auf die in OpenShift gebaute App
 ```
 
 ## Lokaler Build in einer DOS Box gestartet :-)
-
-
+```
+Terminal öffnen 
+build 
+```
 
 
