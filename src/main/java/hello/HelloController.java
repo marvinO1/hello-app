@@ -30,7 +30,7 @@ public class HelloController {
     public String hello() {
         LocalDateTime.now();
         String msg = LocalDateTime.now()
-                + ", Hello App running on host "
+                + ", Demotime, Hello App running on host "
                 + System.getenv("HOSTNAME");
 
         System.out.println(msg);
