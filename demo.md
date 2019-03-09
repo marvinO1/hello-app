@@ -1,10 +1,6 @@
 # Demo OpenShift Deployment
 
-Wir haben eine kleine Hello Applikation in einem Github Projekt:
-
-https://github.com/marvinO1/hello-app
-
-Dieses habe ich auf zwei Arten in einer OpenShift Online Instanz auf zwei Arten deployed
+Ich habe diese App auf zwei Arten in einer OpenShift Online Instanz deployed
 
 #### Als Docker Image
 * http://hello-route-marvino1-example.1d35.starter-us-east-1.openshiftapps.com/hello
