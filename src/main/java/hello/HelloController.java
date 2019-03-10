@@ -65,9 +65,9 @@ public class HelloController {
         String workingDirectory = System.getProperty("user.dir");
 
         return "working directorym is '" + workingDirectory + "'" +
-                ";" +
+                "; " +
                 dir(workingDirectory) +
-                ";" +
+                "; " +
                 dir("data");
     }
 
