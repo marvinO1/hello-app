@@ -64,7 +64,7 @@ public class HelloController {
 
         String workingDirectory = System.getProperty("user.dir");
 
-        return "working directorym is '" + workingDirectory + "'" +
+        return "working directory is '" + workingDirectory + "'" +
                 "; " +
                 dir(workingDirectory) +
                 "; " +
@@ -128,7 +128,7 @@ public class HelloController {
         try {
             sb.append(Files.list(Paths.get(dirName)).count());
         } catch (IOException e) {
-            sb.append("failed to access directory, reason was ").append(e);
+            sb.append("sorry, but failed to access directory, reason was ").append(e);
         }
         return sb.toString();
     }
