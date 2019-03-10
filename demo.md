@@ -3,7 +3,7 @@
 Ich habe diese App auf zwei Arten in einer OpenShift Online Instanz deployed
 
 #### Als Docker Image
-* http://hello-route-marvino1-example.1d35.starter-us-east-1.openshiftapps.com/hello
+* http://hello-app-marvino1-example.1d35.starter-us-east-1.openshiftapps.com/hello
 
 Wir bauen die Applikation lokal wie folgt
 * Jar bauen
@@ -28,7 +28,7 @@ Client auf die lokal gebaute App
 ```
   for($i = 0; $i -lt 999999999; $i++)
   {
-    Invoke-RestMethod http://hello-route-marvino1-example.1d35.starter-us-east-1.openshiftapps.com/hello
+    Invoke-RestMethod http://hello-app-marvino1-example.1d35.starter-us-east-1.openshiftapps.com/hello
     Start-Sleep -Seconds 1
   }
 ```
