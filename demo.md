@@ -12,6 +12,7 @@ Wir bauen die Applikation lokal wie folgt
 * Docker Image auf Docker Hub laden
 * OpenShift informieren dass das Image geändert hat
 
+Dieser Ablauf ist einfach in build.bat File abgebildet. Dies könnte man nun natürlich auch in einer Cloud basierten CI/CD Umgebung machen mit ganz viel ErrorHandling und was man sich sonst noch so alles wünscht. 
 
 #### Als Source2Docker Image aus meinen Git Hub
 * http://hello2-app-marvino1-example.1d35.starter-us-east-1.openshiftapps.com/hello
@@ -22,6 +23,7 @@ Wir bauen die Applikation direkt in OpenShift
 * Github informiert OpenShift
 * Dieses lädt sich die Sourcen runter und baut die Applikation bei sich
 
+Dazu habe ich auf meinen Github einen Webhock definiert, der Openshift informiert wenn ein commit auf meinen Sourcen passiert.
 
 ## Wer ist nun schneller 
 
