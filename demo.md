@@ -52,6 +52,9 @@ build
 ## Erkenntisse
 * lokal bauen und erst dann in Openshift laden war jedes mal schneller (ok, eventuell ist meine Gratis Demo Instanz von Openshift zu klein :-))
 * Grundsätzlich ist die Source2Docker aber recht einfach - jeder commit auf dem GIT führt zu einem Deployment. 
+* Wie es aber so im Leben eben ist - einfache Sachen sind einfach, komplizierte Sachen sind kompliziert. Mein Beispiel ist natürlich super einfach und darum funzte alles auch recht gut.
+
+Wenn man sich nun seine Entwicklungs Umgebung auch in der Cloud einkauft, so sehe ich aktuell keinen Grund dass ich im OpenShift builden will. Dann builde ich lieber in meiner Entwicklungs Cloud die mir auch einen CI/CD Stream anbietet und informiere OpenShift nur wenn es sich das neue Docker Image holen soll. 
 
 
 
