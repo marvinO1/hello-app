@@ -71,6 +71,11 @@ public class HelloController {
                 dir("data");
     }
 
+    @RequestMapping("/hello/health")
+    public String health() {
+       return "OK";
+    }
+
     @RequestMapping("/hello/fast")
     public String fast() {
         randomPause(MILLIS, 30);
