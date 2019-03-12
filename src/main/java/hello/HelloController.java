@@ -73,7 +73,6 @@ public class HelloController {
 
     @RequestMapping("/hello/health")
     public String health() {
-       // we simply return OK as text
        return "OK";
     }
 
