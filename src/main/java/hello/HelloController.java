@@ -19,12 +19,12 @@ public class HelloController {
     private static final int MILLIS = 1;
     private static final int SECONDS = 1000;
 
-    private AtomicInteger fastCounter = new AtomicInteger(0);
-    private AtomicInteger mediumCounter = new AtomicInteger(0);
-    private AtomicInteger slowCounter = new AtomicInteger(0);
-    private AtomicInteger runtimeExceptionCounter = new AtomicInteger(0);
-    private AtomicInteger hossaExceptionCounter = new AtomicInteger(0);
-    private AtomicInteger bertaExceptionCounter = new AtomicInteger(0);
+    private final AtomicInteger fastCounter = new AtomicInteger(0);
+    private final AtomicInteger mediumCounter = new AtomicInteger(0);
+    private final AtomicInteger slowCounter = new AtomicInteger(0);
+    private final AtomicInteger runtimeExceptionCounter = new AtomicInteger(0);
+    private final AtomicInteger hossaExceptionCounter = new AtomicInteger(0);
+    private final AtomicInteger bertaExceptionCounter = new AtomicInteger(0);
 
     @RequestMapping("/hello")
     public String hello() {
